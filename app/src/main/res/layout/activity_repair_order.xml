@@ -9,9 +9,29 @@
 
     <TextView
         android:id="@+id/textView3"
+        android:layout_width="150dp"
+        android:layout_height="40dp"
+        android:text="Repair Order"
+        android:textAlignment="center"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        tools:layout_editor_absoluteX="130dp"
+        tools:layout_editor_absoluteY="66dp" />
+
+    <TextView
+        android:id="@+id/textView4"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Repair Order"
-        tools:layout_editor_absoluteX="166dp"
-        tools:layout_editor_absoluteY="88dp" />
+        android:text="Order type"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="202dp" />
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:layout_width="270dp"
+        android:layout_height="42dp"
+        tools:layout_editor_absoluteX="113dp"
+        tools:layout_editor_absoluteY="192dp" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
