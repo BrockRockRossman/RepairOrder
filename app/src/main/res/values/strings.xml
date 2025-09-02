@@ -3,6 +3,8 @@
     <string name="SubHeader">Subheader</string>
 
     <string name="Sub_Total">Subtotal</string>
+    <string name="Sub_TotalNum">Subtotal</string>
+    <string name="ButtonName">Submit</string>
 
     <string name="Q_1">Order type</string>
     <string name="Q_2">Technician</string>
