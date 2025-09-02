@@ -1,5 +1,9 @@
 <resources>
     <string name="app_name">Repair Order</string>
+    <string name="SubHeader">Subheader</string>
+
+    <string name="Sub_Total">Subtotal</string>
+
     <string name="Q_1">Order type</string>
     <string name="Q_2">Technician</string>
     <string name="Q_3">Inspection</string>
@@ -7,7 +11,7 @@
     <string name="Q_5">Parts</string>
     <string name="Q_6">Labor</string>
 
-    <string name="A_1">(paint, repair, etc...)</string>
+    <string name="A_1">(paint, repair, etc)</string>
     <string name="A_2">(John Doe)</string>
     <string name="A_3">(Yes/No)</string>
     <string name="A_4">(Yes/No)</string>
