@@ -1,3 +1,16 @@
 <resources>
-    <string name="app_name">RepairOrder</string>
+    <string name="app_name">Repair Order</string>
+    <string name="Q_1">udk bro</string>
+    <string name="Q_2"> udk bro </string>
+    <string name="Q_3"> udk bro </string>
+    <string name="Q_4"> udk bro </string>
+    <string name="Q_5"> udk bro </string>
+    <string name="Q_6"> udk bro </string>
+
+    <string name="A_1">udk bro</string>
+    <string name="A_2"> udk bro </string>
+    <string name="A_3"> udk bro </string>
+    <string name="A_4"> udk bro </string>
+    <string name="A_5"> udk bro </string>
+    <string name="A_6"> udk bro </string>
 </resources>
