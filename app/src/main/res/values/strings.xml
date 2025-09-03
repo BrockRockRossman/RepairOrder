@@ -15,8 +15,8 @@
 
     <string name="A_1">(paint, repair, etc)</string>
     <string name="A_2">(John Doe)</string>
-    <string name="A_3">(Yes/No)</string>
-    <string name="A_4">(Yes/No)</string>
-    <string name="A_5">(Yes/No)</string>
-    <string name="A_6">(Yes/No)</string>
+    <string name="A_3">$</string>
+    <string name="A_4">$</string>
+    <string name="A_5">$</string>
+    <string name="A_6">$</string>
 </resources>

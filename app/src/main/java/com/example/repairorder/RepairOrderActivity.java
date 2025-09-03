@@ -2,6 +2,7 @@ package com.example.repairorder;
 
 import android.os.Bundle;
 import android.util.Log;
+import android.widget.EditText;
 import android.widget.TextView;
 
 import androidx.activity.EdgeToEdge;
@@ -34,11 +35,17 @@ public class RepairOrderActivity extends AppCompatActivity {
             return insets;
         });
 
+
+
+
+
         TextView totalTV = findViewById(R.id.SubTotalNum);
 
         Random gen = new Random();
 
         double number = gen.nextDouble();
+
+
         String v1 = "$ " + R.string.Sub_TotalNum;
         totalTV.setText(v1);
 
