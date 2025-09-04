@@ -212,11 +212,11 @@
         android:layout_marginTop="20dp"
         android:layout_marginEnd="36dp"
         android:text="@string/Total"
-        app:layout_constraintEnd_toStartOf="@+id/TotalNum"
+        app:layout_constraintEnd_toStartOf="@+id/totalNum"
         app:layout_constraintTop_toBottomOf="@+id/subTotal" />
 
     <TextView
-        android:id="@+id/TotalNum"
+        android:id="@+id/totalNum"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"

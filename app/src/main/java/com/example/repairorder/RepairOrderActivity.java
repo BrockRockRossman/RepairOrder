@@ -22,6 +22,7 @@ public class RepairOrderActivity extends AppCompatActivity {
 
 
     TextView subTotalTV;
+    TextView totalTV;
 
     EditText A1PT;
     EditText A2PT;
@@ -63,8 +64,16 @@ public class RepairOrderActivity extends AppCompatActivity {
             double partsAmount = Double.parseDouble(partsValue);
             double laborAmount = Double.parseDouble(laborValue);
 
-            String subTotal = "$ " + (inspectionAmount + paintAmount + partsAmount + laborAmount);
+            double subTotalNum = (inspectionAmount + paintAmount + partsAmount + laborAmount);
+            String subTotal = "$ " + subTotalNum;
+
+            double totalNum = subTotalNum * 1.2;
+            String total = "$ " + totalNum;
+
             subTotalTV.setText(subTotal);
+            totalTV.setText(total);
+
+
 
         }
 
@@ -100,6 +109,8 @@ public class RepairOrderActivity extends AppCompatActivity {
         A6PT = findViewById(R.id.plainTextA6);
 
         subTotalTV = findViewById(R.id.SubTotalNum);
+        totalTV = findViewById(R.id.totalNum);
+
         submitB = findViewById(R.id.submitButton);
         submitB.setOnClickListener(buttonListener);
 
