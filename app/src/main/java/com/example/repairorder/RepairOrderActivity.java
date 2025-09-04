@@ -20,7 +20,7 @@ import java.util.Random;
 
 public class RepairOrderActivity extends AppCompatActivity {
 
-    double numbers = 0.0;
+
     TextView subTotalTV;
 
     EditText A1PT;
@@ -41,7 +41,7 @@ public class RepairOrderActivity extends AppCompatActivity {
         @Override
         public void onClick(View view) {
 
-
+            /*
             Random gen = new Random();
             double number = gen.nextDouble();
 
@@ -50,7 +50,7 @@ public class RepairOrderActivity extends AppCompatActivity {
             subTotalTV.setText(v1);
 
             String value = subTotalTV.getText().toString();
-
+            */
 
 
             String inspectionValue = A3PT.getText().toString();
