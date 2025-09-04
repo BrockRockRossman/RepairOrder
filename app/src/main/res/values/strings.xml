@@ -4,6 +4,8 @@
 
     <string name="Sub_Total">Subtotal</string>
     <string name="Sub_TotalNum">Subtotal</string>
+    <string name="Total">Total</string>
+    <string name="TotalNum">Total</string>
     <string name="ButtonName">Submit</string>
 
     <string name="Q_1">Order type</string>
