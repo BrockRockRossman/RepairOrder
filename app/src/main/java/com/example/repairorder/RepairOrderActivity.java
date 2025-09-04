@@ -58,7 +58,12 @@ public class RepairOrderActivity extends AppCompatActivity {
             String partsValue = A5PT.getText().toString();
             String laborValue = A6PT.getText().toString();
 
-            String subTotal = "$ " + (Double.parseDouble(inspectionValue) + Double.parseDouble(paintValue) + Double.parseDouble(partsValue) + Double.parseDouble(laborValue));
+            double inspectionAmount = Double.parseDouble(inspectionValue);
+            double paintAmount = Double.parseDouble(paintValue);
+            double partsAmount = Double.parseDouble(partsValue);
+            double laborAmount = Double.parseDouble(laborValue);
+
+            String subTotal = "$ " + (inspectionAmount + paintAmount + partsAmount + laborAmount);
             subTotalTV.setText(subTotal);
 
         }
