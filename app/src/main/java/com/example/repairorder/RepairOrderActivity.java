@@ -21,7 +21,7 @@ import java.util.Random;
 public class RepairOrderActivity extends AppCompatActivity {
 
     double numbers = 0.0;
-    TextView totalTV;
+    TextView subTotalTV;
 
     EditText A1PT;
     EditText A2PT;
@@ -47,14 +47,19 @@ public class RepairOrderActivity extends AppCompatActivity {
 
 
             String v1 = "$ " + R.string.Sub_TotalNum;
-            totalTV.setText(v1);
+            subTotalTV.setText(v1);
 
-            String value = totalTV.getText().toString();
+            String value = subTotalTV.getText().toString();
 
-            Double subTotal = Double.parseDouble(A1PT.getText().toString());
 
-            String orderTypeValue = A1PT.getText().toString();
 
+            String inspectionValue = A3PT.getText().toString();
+            String paintValue = A4PT.getText().toString();
+            String partsValue = A5PT.getText().toString();
+            String laborValue = A6PT.getText().toString();
+
+            String subTotal = "$ " + (Double.parseDouble(inspectionValue) + Double.parseDouble(paintValue) + Double.parseDouble(partsValue) + Double.parseDouble(laborValue));
+            subTotalTV.setText(subTotal);
 
         }
 
@@ -89,7 +94,7 @@ public class RepairOrderActivity extends AppCompatActivity {
         A5PT = findViewById(R.id.plainTextA5);
         A6PT = findViewById(R.id.plainTextA6);
 
-        totalTV = findViewById(R.id.SubTotalNum);
+        subTotalTV = findViewById(R.id.SubTotalNum);
         submitB = findViewById(R.id.submitButton);
         submitB.setOnClickListener(buttonListener);
 
