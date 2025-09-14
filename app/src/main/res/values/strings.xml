@@ -7,6 +7,10 @@
     <string name="Total">Total</string>
     <string name="TotalNum">Total</string>
     <string name="ButtonName">Submit</string>
+    <string name="tax">Tax</string>
+    <string name="taxNum">0</string>
+
+
 
     <string name="Q_1">Order type</string>
     <string name="Q_2">Technician</string>

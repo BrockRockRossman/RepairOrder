@@ -199,9 +199,9 @@
         android:id="@+id/submitButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="50dp"
-        android:layout_marginBottom="81dp"
-        android:text="Button"
+        android:layout_marginStart="48dp"
+        android:layout_marginBottom="40dp"
+        android:text="@string/ButtonName"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
 
@@ -210,19 +210,37 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
-        android:layout_marginEnd="36dp"
+        android:layout_marginEnd="40dp"
         android:text="@string/Total"
         app:layout_constraintEnd_toStartOf="@+id/totalNum"
-        app:layout_constraintTop_toBottomOf="@+id/subTotal" />
+        app:layout_constraintTop_toBottomOf="@+id/tax" />
 
     <TextView
         android:id="@+id/totalNum"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
-        android:layout_marginEnd="80dp"
+        android:layout_marginEnd="60dp"
         android:text="@string/TotalNum"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/SubTotalNum" />
+        app:layout_constraintTop_toBottomOf="@+id/taxNum" />
+
+    <TextView
+        android:id="@+id/tax"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="@string/tax"
+        app:layout_constraintTop_toBottomOf="@+id/subTotal"
+        tools:layout_editor_absoluteX="257dp" />
+
+    <TextView
+        android:id="@+id/taxNum"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="60dp"
+        android:text="@string/taxNum"
+        app:layout_constraintEnd_toEndOf="parent"
+        tools:layout_editor_absoluteY="593dp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

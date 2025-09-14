@@ -23,6 +23,7 @@ public class RepairOrderActivity extends AppCompatActivity {
 
     TextView subTotalTV;
     TextView totalTV;
+    TextView taxTV;
 
     EditText A1PT;
     EditText A2PT;
@@ -31,7 +32,7 @@ public class RepairOrderActivity extends AppCompatActivity {
     EditText A5PT;
     EditText A6PT;
 
-
+    String[] orderTypes = {"repair", "inspection", "routine check"};
 
 
 
@@ -67,11 +68,15 @@ public class RepairOrderActivity extends AppCompatActivity {
             double subTotalNum = (inspectionAmount + paintAmount + partsAmount + laborAmount);
             String subTotal = "$ " + subTotalNum;
 
+            double taxNum = subTotalNum * .2;
+            String tax = "$ " + taxNum;
+
             double totalNum = subTotalNum * 1.2;
             String total = "$ " + totalNum;
 
             subTotalTV.setText(subTotal);
             totalTV.setText(total);
+            taxTV.setText(tax);
 
 
 
@@ -110,6 +115,7 @@ public class RepairOrderActivity extends AppCompatActivity {
 
         subTotalTV = findViewById(R.id.SubTotalNum);
         totalTV = findViewById(R.id.totalNum);
+        taxTV = findViewById(R.id.taxNum);
 
         submitB = findViewById(R.id.submitButton);
         submitB.setOnClickListener(buttonListener);
