@@ -46,19 +46,6 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <EditText
-        android:id="@+id/plainTextA1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="35dp"
-        android:layout_marginEnd="41dp"
-        android:ems="10"
-        android:hint="@string/A_1"
-        android:inputType="text"
-        android:textSize="18sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/SubHeader" />
-
     <TextView
         android:id="@+id/textViewQ2"
         android:layout_width="83dp"
@@ -118,14 +105,14 @@
         android:id="@+id/plainTextA2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="19dp"
         android:layout_marginEnd="41dp"
         android:ems="10"
         android:hint="@string/A_2"
         android:inputType="text"
         android:textColor="#000000"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/plainTextA1" />
+        app:layout_constraintTop_toBottomOf="@+id/spinner" />
 
     <EditText
         android:id="@+id/plainTextA3"
@@ -230,17 +217,28 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="24dp"
+        android:layout_marginEnd="64dp"
         android:text="@string/tax"
-        app:layout_constraintTop_toBottomOf="@+id/subTotal"
-        tools:layout_editor_absoluteX="257dp" />
+        app:layout_constraintEnd_toStartOf="@+id/taxNum"
+        app:layout_constraintTop_toBottomOf="@+id/subTotal" />
 
     <TextView
         android:id="@+id/taxNum"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
         android:layout_marginEnd="60dp"
         android:text="@string/taxNum"
         app:layout_constraintEnd_toEndOf="parent"
-        tools:layout_editor_absoluteY="593dp" />
+        app:layout_constraintTop_toBottomOf="@+id/SubTotalNum" />
+
+    <Spinner
+        android:id="@+id/spinner"
+        android:layout_width="208dp"
+        android:layout_height="23dp"
+        android:layout_marginTop="56dp"
+        android:layout_marginEnd="42dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/SubHeader" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

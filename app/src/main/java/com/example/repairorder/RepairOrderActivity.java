@@ -4,8 +4,10 @@ import android.hardware.biometrics.PromptContentItemPlainText;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
+import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.Spinner;
 import android.widget.TextView;
 
 import androidx.activity.EdgeToEdge;
@@ -16,6 +18,7 @@ import androidx.core.view.WindowInsetsCompat;
 
 import org.w3c.dom.Text;
 
+import java.util.ArrayList;
 import java.util.Random;
 
 public class RepairOrderActivity extends AppCompatActivity {
@@ -25,20 +28,30 @@ public class RepairOrderActivity extends AppCompatActivity {
     TextView totalTV;
     TextView taxTV;
 
-    EditText A1PT;
+
     EditText A2PT;
     EditText A3PT;
     EditText A4PT;
     EditText A5PT;
     EditText A6PT;
 
-    String[] orderTypes = {"repair", "inspection", "routine check"};
+    ArrayList<String> orderTypes = new ArrayList<>();
+
+
+
 
 
 
     // Create button variable
     Button submitB;
-    // clreate button listener
+
+    Spinner spinner;
+
+
+
+
+
+    // create button listener
     View.OnClickListener buttonListener = new View.OnClickListener() {
         @Override
         public void onClick(View view) {
@@ -84,29 +97,49 @@ public class RepairOrderActivity extends AppCompatActivity {
 
     };
 
+    View.OnClickListener selectionListener = new View.OnClickListener(){
+        public void onClick(View v){
+
+        }
+    };
+
+
+
+
 
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
 
 
-
+        orderTypes.add("Repair");
+        orderTypes.add("Inspection");
+        orderTypes.add("Routine Check");
 
 
         super.onCreate(savedInstanceState);
         EdgeToEdge.enable(this);
         setContentView(R.layout.activity_repair_order);
+
+
+
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main), (v, insets) -> {
             Insets systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars());
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
             return insets;
         });
 
+        Spinner mySpinner = (Spinner)
+                findViewById(R.id.spinner);
+        ArrayAdapter<String> adapter =
+                new ArrayAdapter<>(this, android.R.layout.simple_spinner_item, orderTypes);
+        mySpinner.setAdapter(adapter);
 
 
 
 
-        A1PT = findViewById(R.id.plainTextA1);
+
+
         A2PT = findViewById(R.id.plainTextA2);
         A3PT = findViewById(R.id.plainTextA3);
         A4PT = findViewById(R.id.plainTextA4);
@@ -120,13 +153,8 @@ public class RepairOrderActivity extends AppCompatActivity {
         submitB = findViewById(R.id.submitButton);
         submitB.setOnClickListener(buttonListener);
 
-
-
-
-
-
-
-
+        spinner = findViewById(R.id.spinner);
+        //spinner.setOnClickListener(selectionListener);
 
 
 
